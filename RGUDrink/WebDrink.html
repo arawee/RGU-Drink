@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RGU:Drink</title>
+  <link rel="icon" href="res/favicon-32x32.png" />
+  <link rel="icon" href="res/favicon-32x32.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=PSource+Sans+Pro:400,900i&display=swap" rel="stylesheet">
+  <link rel = "stylesheet" type = "text/css" href = "CSS.css" />
+  <script type="text/javascript" src="drinkBigDieHard.js¨x"></script>
+</head>
+<body>
+<!--HEADER SECTION START-->
+  <header class="header">
+      <div class="logo">
+        <a href="index.html"><img src="res/LOGO.png" alt="RGU GAMING SOCIETY"></a>
+      </div>
+  </header>
+    <div class="line"></div>
+        <div class="content">
+            <div class="bggamrr">
+                <div class="gradient">
+                    <form onsubmit="drinkBigDieHard()">
+                        <div>
+                            Weight (between 20 and 200):
+                            <input id="weightin" type="number" name="quantity" min="20" max="200">
+                        </div>
+                        <div>
+                            <input  type="radio" name="gender" value="male" checked> Male<br>
+                            <input  type="radio" name="gender" value="female"> Female<br>
+                            <input  type="radio" name="gender" value="other"> Other
+                        </div>
+                        <div>
+                            Select a time:
+                            <input id="timein" type="time" name="usr_time">
+                        </div> Select drink: 
+                        <select id="cars" name="cars">
+                            <option value ="tennents 1">Tennant's - 1 pint</option>
+                            <option value ="tennents 0.5">Tennant's - 0.5 pint</option>
+                            <option value ="red wine 0.1">Red Wine - 0.1l</option>
+                            <option value ="red wine 0.2">Red Wine - 0.2l</option>
+                            <option value ="red wine 0.75">Red Wine - 0.75l</option>
+                            <option value ="white wine 0.1">White Wine - 0.1l</option>
+                            <option value ="white wine 0.2">White Wine - 0.2l</option>
+                            <option value ="white wine 0.75">White Wine - 0.75l</option>
+                            <option value ="vodka">Vodka - 0.03l</option>
+                            <option value ="gin">Gin - 0.03l</option>
+                            <option value ="whiskey">Whiskey - 0.03</option>
+                            <option value ="tequilla">Tequilla - 0.03</option>
+                            <option value ="strongbow 1">Strongbow - 1 pint</option>
+                            <option value ="strongbow 0.5">Strongbow - 0.5 pint</option>
+                            <option value ="kopparberg 1">Kopparberg - 1 pint</option>
+                            <option value ="kopparberg 0.5">Kopparberg - 0.5 pint</option>
+                            <option value ="kopparberg 0.33">Kopparberg - 0.33l</option>
+                            <option value ="magners 1">Magners Cider - 1 pint</option>
+                            <option value ="magners 0.5">Magners Cider - 0.5 pint</option>
+                        </select>
+                        <div>
+                            <input type="button" value="Submit" onclick="runScript()">
+                        </div>
+                    </form>
+                    <div id="outputContainer" class="alert"> 
+                        <strong>Danger!</strong> Indicates a dangerous or potentially negative action.
+                    </div>
+                </div>
+            </div> 
+        <div class="line"></div>
+        <footer class="footer">
+        </footer>
+    </div>
+    <script type="text/javascript" src="drinkBigDieHard.js"></script>
+</body>
